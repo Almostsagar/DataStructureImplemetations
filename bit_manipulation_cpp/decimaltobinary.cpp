@@ -13,12 +13,12 @@ string decimalToBinary(int &decimal){
     //     decimal /= 2;
     // }
     // return binary;
-    return bitset<32>(decimal).to_string();
+    return bitset<4>(decimal).to_string();
 }
 
 int main()
 {
-    int decimal = 11;
+    int decimal = 5;
     cout << "Decimal number before conversion -> " << decimal << "\n";
     cout << "Binary number after conversion -> " << decimalToBinary(decimal) << "\n";
     return 0;
