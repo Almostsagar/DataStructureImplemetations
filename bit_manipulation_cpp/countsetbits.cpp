@@ -4,7 +4,6 @@ int countSetBits(int number) {
     int count = 0;
     while (number) {
         number = number & (number - 1);
-        cout << number;
         count++;
     }
     return count;
