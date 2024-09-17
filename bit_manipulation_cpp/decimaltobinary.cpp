@@ -16,12 +16,10 @@ string decimalToBinary(int &decimal){
     return bitset<32>(decimal).to_string();
 }
 
-// int main()
-// {
-//     int decimal = 0;
-//     for(int i=0; i > -10 ; i--){
-//     cout << "Decimal number before conversion -> " << i << "\n";
-//     cout << "Binary number after conversion -> " << decimalToBinary(i) << "\n";
-//     }
-//     return 0;
-// }
+int main()
+{
+    int decimal = 11;
+    cout << "Decimal number before conversion -> " << decimal << "\n";
+    cout << "Binary number after conversion -> " << decimalToBinary(decimal) << "\n";
+    return 0;
+}
